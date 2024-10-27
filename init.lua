@@ -1010,5 +1010,10 @@ require('cyberdream').setup {
     mini = true,
   },
 }
+
+vim.cmd 'colorscheme cyberdream'
+vim.cmd 'hi CursorLine guibg=NONE guifg=NONE'
+vim.cmd 'highlight Visual guibg=#FF5F87 guifg=#000000'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
