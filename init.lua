@@ -1014,6 +1014,8 @@ require('cyberdream').setup {
 vim.cmd 'colorscheme cyberdream'
 vim.cmd 'hi CursorLine guibg=NONE guifg=NONE'
 vim.cmd 'highlight Visual guibg=#FF5F87 guifg=#000000'
+vim.api.nvim_set_keymap('n', '<Tab>', '<cmd>bn<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<cmd>bn<CR>', { noremap = true })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
