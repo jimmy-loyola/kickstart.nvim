@@ -1018,6 +1018,8 @@ require('cyberdream').setup {
 vim.cmd 'colorscheme cyberdream'
 vim.cmd 'hi CursorLine guibg=NONE guifg=NONE'
 vim.cmd 'highlight Visual guibg=#FF5F87 guifg=#000000'
+vim.cmd 'set nolist'
+vim.opt.tabstop = 2
 vim.api.nvim_set_keymap('n', '<Tab>', '<cmd>bn<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<cmd>bp<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>00', '<cmd>ClangdSwitchSourceHeader<CR>', { noremap = true })
