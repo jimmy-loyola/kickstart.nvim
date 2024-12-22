@@ -390,7 +390,7 @@ require('lazy').setup({
         -- pickers = {}
         defaults = {
           layout_strategy = 'horizontal',
-          layout_config = { width = 0.99, height = 0.99 },
+          layout_config = { width = 0.9, height = 0.8 },
         },
         extensions = {
           ['ui-select'] = {
@@ -407,10 +407,10 @@ require('lazy').setup({
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
-      vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = '[S]earch [F]iles' })
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-      vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = '[S]earch by [G]rep' })
+      vim.keymap.set('n', '<leader>gg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
@@ -1019,7 +1019,7 @@ vim.cmd 'colorscheme cyberdream'
 vim.cmd 'hi CursorLine guibg=NONE guifg=NONE'
 vim.cmd 'highlight Visual guibg=#FF5F87 guifg=#000000'
 vim.cmd 'set nolist'
-vim.opt.tabstop = 2
+vim.opt.tabstop = 1
 vim.api.nvim_set_keymap('n', '<Tab>', '<cmd>bn<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<cmd>bp<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>00', '<cmd>ClangdSwitchSourceHeader<CR>', { noremap = true })
