@@ -954,7 +954,7 @@ require('lazy').setup({
   { import = 'custom.plugins' },
   {
   "ray-x/lsp_signature.nvim",
-  event = "InsertEnter",
+  event = "BufReadPre",
   opts = {
     bind = true,
     handler_opts = {
@@ -996,7 +996,7 @@ require('cyberdream').setup {
   hide_fillchars = false,
 
   -- Modern borderless telescope theme - also applies to fzf-lua
-  borderless_telescope = false,
+  borderless_pickers = false,
 
   -- Set terminal colors used in `:terminal`
   terminal_colors = true,
