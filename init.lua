@@ -1048,6 +1048,9 @@ vim.cmd 'colorscheme cyberdream'
 vim.cmd 'hi CursorLine guibg=NONE guifg=NONE'
 vim.cmd 'highlight Visual guibg=#FF5F87 guifg=#000000'
 vim.cmd 'set nolist'
+vim.cmd 'set list'
+vim.cmd 'set listchars=tab:>-,trail:.,space:·,eol:↵'
+vim.cmd 'set clipboard=unnamedplus'
 vim.opt.tabstop = 1
 vim.api.nvim_set_keymap('n', '<Tab>', '<cmd>bn<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<cmd>bp<CR>', { noremap = true })
